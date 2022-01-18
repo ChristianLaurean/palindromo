@@ -1,17 +1,17 @@
-def palindromo(numero):
-    numero_al_revez = numero[::-1]
-    if  numero == numero_al_revez:
+def palindrome(number):
+    upside_down_number = number[::-1]
+    if  number == upside_down_number:
         return True
     else:
         return False
 
 
 def run():
-    numero = (input('Escribe un numero: '))
-    if palindromo(numero) == True:
-        print('Es palindromo')
+    number = (input('Write a numero: '))
+    if palindrome(number) == True:
+        print('Is palindrome')
     else:
-        print("No es palindromo")
+        print("It's not palindrome")
 
 
 if __name__ == '__main__':
