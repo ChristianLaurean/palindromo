@@ -1,4 +1,4 @@
-Print('Bienvenido')
+print('Bienvenido')
 
 def palindrome(num):
     upside_down_number = num[::-1]
