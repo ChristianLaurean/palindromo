@@ -1,15 +1,18 @@
-class Solution:
-    def isPalindrome(self, x):
-        if x > 0:
-            temp = x
-            rev_int_elements = []
-            while temp > 0:
-                digit = temp % 10
-                rev_int_elements.append(digit)
-                temp = temp // 10
-            org_int_elements = rev_int_elements[::-1]
-            return rev_int_elements == org_int_elements
-        elif x == 0:
-            return True
-        else:
-            return False
+def palindrome(number):
+    upside_down_number = number[::-1]
+    if  number == upside_down_number:
+        return True
+    else:
+        return False
+
+
+def run():
+    number = (input('Write a numero: '))
+    if palindrome(number) == True:
+        print('Is palindrome')
+    else:
+        print("It's not palindrome")
+
+
+if __name__ == '__main__':
+    run()
