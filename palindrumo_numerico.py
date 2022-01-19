@@ -1,6 +1,6 @@
 def palindrome(number):
-    upside_down_number = number[::-1]
-    if  number == upside_down_number:
+    numero_al_reves = number[::-1]
+    if  number == numero_al_reves:
         return True
     else:
         return False
